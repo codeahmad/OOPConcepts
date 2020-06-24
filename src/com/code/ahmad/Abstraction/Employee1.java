@@ -63,6 +63,7 @@ public class Employee1  extends Ceo {
 		this.numberOfHour = numberOfHour;
 	}
 
+	// Overriding abstract method and adding implementation
 	@Override
 	public void calculateBonus() {
 		

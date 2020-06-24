@@ -64,13 +64,14 @@ public class Employee3 extends Ceo {
 		this.revenue = revenue;
 	}
 
+	// Overriding abstract method and adding implementation
 	@Override
 	public void calculateBonus() {
 		if (numberOfHour >= 1500 && revenue >= 100000) {
 			System.out.println("You are promoted" + "You bonuus is:10,000");
-		} else if (numberOfHour < 1500 && numberOfHour > 1100 && revenue >= 70000) {
+		} else if (numberOfHour >= 1100 && revenue >= 70000) {
 			System.out.println("You are promoted" + "You bonuus is:7,000");
-		} else if (numberOfHour < 1100 && numberOfHour > 700 && revenue >= 50000) {
+		} else if (numberOfHour >= 700 && revenue >= 50000) {
 			System.out.println("You are promoted" + "You bonuus is:5,000");
 		} else {
 			System.out.println("Sorry you are not entitled for bonus");

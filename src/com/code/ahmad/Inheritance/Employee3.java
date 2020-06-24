@@ -35,7 +35,8 @@ public class Employee3 extends Manager{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
+	// Overriding methods from super class giving own implementation	
 	@Override
 	public void myDetail() {
 		System.out.println("I am Employee3:\nMy id is:"+id+ "\nMy name is:"+name+"\nMy Email is:"+email);

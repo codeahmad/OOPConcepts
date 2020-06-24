@@ -1,9 +1,8 @@
 package com.code.ahmad.Inheritance;
 
-import java.util.ArrayList;
-
 public class Manager {
 
+	// Manager private details 
 	private int id;
 
 	private String name;
@@ -34,6 +33,7 @@ public class Manager {
 		this.email = email;
 	}
 
+	// These are common traits methods, also available to other classes extending this class
 	public void myDetail() {
 		System.out.println("I am Manager:\nMy id is:" + id + "\nMy name is:" + name 
 				+ "\nMy Email is:" + email);
